@@ -54,7 +54,24 @@ bool FindElementInMatrix(int[,] matrix, int targetElement)
     return false;
 }
 
-7.4. 
+7.4.
+
+    public static (double, double) FindCoefficients(double beginX, double beginY, double endX, double endY)
+    {
+        if (beginX == endX && beginY == endY)
+        {
+            throw new ArgumentException("Begin and End points cannot be the same");
+        double k = (endY - beginY) / (endX - beginX);
+        
+	double b = beginY - k * beginX;
+
+        return (k, b);
+    }
+    public static int MiddleIndex(int first, int last)
+    {
+       return (first + last) / 2
+    }
+	
 
 7.5.
 temp - bufferOfDigits (buffer_of_digits)
