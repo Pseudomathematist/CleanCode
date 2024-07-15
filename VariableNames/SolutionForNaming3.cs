@@ -5,8 +5,55 @@ inCombat - isInCombat
 notHasItem - hasItem
 notEnoughSkillPoints - areSkillPointsEnough
 7.2.
-7.3. Проверьте, правильно ли вы даёте имена индексам циклов. Попробуйте найти случай, когда вместо i j k нагляднее использовать более выразительное имя.
+public bool IsTree(graph inputGraph)
+  {
+      bool find = (FindCycleIn(inputGraph) != null);
+      bool isInputConnective = IsGraphConnective(inputGraph);
+      return !find && isInputConnective;
+  }
 
-7.4. Попробуйте найти в своих решениях два-три случая, когда можно использовать пары имён - антонимы.
+//
+
+static bool CheckForMatchingProducts(List<Product> products, string targetName)
+{
+    bool productFound = false; 
+    int foundProductCount = 0; 
+
+    foreach (Product product in products)
+    {
+        if (product.Name == targetName)
+        {
+            productFound = true; 
+            foundProductCount++; 
+        }
+    }
+
+    if (foundProductCount > 1) 
+    {
+        Console.WriteLine($"Найдено {foundProductCount} продуктов с именем {targetName}"); 
+    }
+
+    return productFound; 
+}
+
+
+7.3.
+bool FindElementInMatrix(int[,] matrix, int targetElement)
+{
+    for (int row = 0; row < matrix.GetLength(0); row++) 
+    {
+        for (int col = 0; col < matrix.GetLength(1); col++) 
+        {
+            if (matrix[row, col] == targetElement)
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+7.4. 
 
 7.5
