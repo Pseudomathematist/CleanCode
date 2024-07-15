@@ -69,7 +69,7 @@ bool FindElementInMatrix(int[,] matrix, int targetElement)
     }
     public static int MiddleIndex(int first, int last)
     {
-       return (first + last) / 2
+       return (first + last) / 2;
     }
 	
 
