@@ -10,6 +10,7 @@ ReceiveInfo - Get
 Make - Create
 Build - Create
 Validate - Check
-
+Keep - Save
+Delete - Remove
 
 
