@@ -10,3 +10,6 @@ generateReportAndSend - generateReport
 // Генерирует отчёт 
 generateReportAndSend - sendReport
 // Отправляет отчёт
+brew - CreatePotion
+// Сварить зелье
+
