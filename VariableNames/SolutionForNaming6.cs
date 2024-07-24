@@ -18,3 +18,5 @@ Identify - IdentifyItemInHand
 // Индифицирует предмет в руке
 Attack - AttackFireDamage
 // Наносит огненный урон
+BuildStructure - IssueBuildStructure
+// Создаёт запрос на постройку структуры
