@@ -14,4 +14,6 @@ Solution - WriteAnswerInConsole
 // Выводит ответ на задачу
 Brew - CreatePotion
 // Сварить зелье
+Identify - IdentifyItemInHand
+// Индифицирует предмет в руке
 
