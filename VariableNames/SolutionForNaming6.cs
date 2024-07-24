@@ -20,3 +20,5 @@ Attack - AttackFireDamage
 // Наносит огненный урон
 BuildStructure - IssueBuildStructure
 // Создаёт запрос на постройку структуры
+RemoveItem - RemoveItemInInventory
+// Удаляет предмет из инвентаря
