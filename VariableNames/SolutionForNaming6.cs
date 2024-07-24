@@ -6,3 +6,7 @@ GoToPoint - WalkToPoint
 // Идти до точки на карте
 GoToPoint - RideToPoint
 // Ехать до точки на карте
+generateReportAndSend - generateReport
+// Генерирует отчёт 
+generateReportAndSend - sendReport
+// Отправляет отчёт
