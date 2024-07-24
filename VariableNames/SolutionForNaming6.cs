@@ -16,4 +16,5 @@ Brew - CreatePotion
 // Сварить зелье
 Identify - IdentifyItemInHand
 // Индифицирует предмет в руке
-
+Attack - AttackFireDamage
+// Наносит огненный урон
