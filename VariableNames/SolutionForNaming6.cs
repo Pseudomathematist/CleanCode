@@ -6,10 +6,12 @@ GoToPoint - WalkToPoint
 // Идти до точки на карте
 GoToPoint - RideToPoint
 // Ехать до точки на карте
-generateReportAndSend - generateReport
+GenerateReportAndSend - generateReport
 // Генерирует отчёт 
-generateReportAndSend - sendReport
+GenerateReportAndSend - sendReport
 // Отправляет отчёт
-brew - CreatePotion
+Solution - WriteAnswerInConsole
+// Выводит ответ на задачу
+Brew - CreatePotion
 // Сварить зелье
 
