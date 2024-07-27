@@ -1,6 +1,6 @@
 3.1
-  public class Rectangle
-  {
+public class Rectangle
+{
     private double width;
     private double height;
 
@@ -64,3 +64,51 @@ public class Character
         }
     }
 }
+//
+
+public class Spell
+{
+    private string name;
+    private int manaCost;
+    private int damage;
+    private SpellType type;
+
+    // Приватный конструктор
+    private Spell(string name, int manaCost, int damage, SpellType type)
+    {
+        this.name = name;
+        this.manaCost = manaCost;
+        this.damage = damage;
+        this.type = type;
+    }
+
+    // Метод-фабрика для создания базового заклинания
+    public static Spell CreateBasicSpell(string name, SpellType type)
+    {
+        return new Spell(name, 10, 5, type);
+    }
+
+    // Метод-фабрика для создания заклинания с заданными характеристиками
+    public static Spell CreateSpell(string name, int manaCost, int damage, SpellType type)
+    {
+        return new Spell(name, manaCost, damage, type);
+    }
+
+    // Метод-фабрика для создания заклинания с увеличенным уроном
+    public static Spell CreatePowerfulSpell(string name, SpellType type)
+    {
+        return new Spell(name, 20, 15, type);
+    }
+
+    // Другие методы класса Spell
+}
+
+public enum SpellType
+{
+    Fire,
+    Ice,
+    Lightning,
+    Healing
+}
+3.2
+Не использовал
