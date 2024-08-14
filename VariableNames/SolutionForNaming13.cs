@@ -30,3 +30,16 @@ Queue<string> chatMessages = new Queue<string>();
 chatMessages.Enqueue("Привет!");
 chatMessages.Enqueue("Как дела?");
 // Использование очереди (Queue) для хранения сообщений чата
+
+
+// Создание HashSet для хранения имен гостей
+HashSet<string> guests = new HashSet<string>();
+
+guests.Add("Иван");
+guests.Add("Мария");
+guests.Add("Иван");
+
+if (!guests.Add("Иван"))
+{
+    Console.WriteLine("Гость 'Иван' уже на вечеринке.");
+}
