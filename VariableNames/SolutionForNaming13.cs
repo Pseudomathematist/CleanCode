@@ -23,3 +23,10 @@ Dictionary<string, object> eventScore = new Dictionary<string, object>()
     { "CommonItem", 3 }
 };
 // Использование словаря для хранения кол-ва очков за действие.
+
+string[] chatMessages = new string[50]; 
+//
+Queue<string> chatMessages = new Queue<string>();
+chatMessages.Enqueue("Привет!");
+chatMessages.Enqueue("Как дела?");
+// Использование очереди (Queue) для хранения сообщений чата
