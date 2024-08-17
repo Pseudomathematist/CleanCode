@@ -207,3 +207,33 @@ public class EvenNumberChecker
         Console.WriteLine($"{number} - {isEven}");
     }
 }
+//
+public class BookSorterLambda
+{
+    public static void Main(string[] args)
+    {
+        // Создаем список книг
+        List<Book> books = new List<Book>()
+        {
+            new Book("Война и мир", "Лев Толстой", 885),
+            new Book("Преступление и наказание", "Фёдор Достоевский", 680),
+            new Book("Мастер и Маргарита", "Михаил Булгаков", 422),
+        };
+
+        // Сортируем книги по автору
+        List<Book> sortedByAuthor = books.OrderBy(book => book.Author).ToList();
+        Console.WriteLine("Сортировка по автору:");
+        foreach (Book book in sortedByAuthor)
+        {
+            book.PrintInfo();
+        }
+
+        // Сортируем книги по количеству страниц
+        List<Book> sortedByPages = books.OrderByDescending(book => book.Pages).ToList();
+        Console.WriteLine("\nСортировка по количеству страниц:");
+        foreach (Book book in sortedByPages)
+        {
+            book.PrintInfo();
+        }
+    }
+}
