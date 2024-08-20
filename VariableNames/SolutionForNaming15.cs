@@ -9,3 +9,11 @@ if (player.position.x >= item.position.x - item.range &&
 if (player.isInRangeOf(item)) {
     // Взаимодействие с предметом
 }
+
+
+// Устанавливает здоровье игрока на начальное значение
+player.health = player.maxHealth;
+//Улучшение 
+player.ResetHealth();
+
+
