@@ -83,5 +83,26 @@ public class Character
         return 10; // Простое значение для примера
     }
 }
+//Улучшение
+public class Character
+{
+    public void Attack(Character target)
+    {
+        if (target.IsAlive)
+        {
+            int damage = CalculateDamage();
+            target.TakeDamage(damage);
+            Console.WriteLine($"{this.Name} атакует {target.Name} и наносит {damage} урона!");
+        }
+        else
+        {
+            Console.WriteLine($"{target.Name} уже мертв!");
+        }
+    }
 
+    private int CalculateDamage()
+    {
+        return 10; // Простое значение для примера
+    }
+}
 
