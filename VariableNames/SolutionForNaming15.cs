@@ -106,3 +106,56 @@ public class Character
     }
 }
 
+
+
+public class Character
+{
+    // Метод для перемещения персонажа
+    public void Move(int x, int y)
+    {
+        // Проверяем, возможно ли перемещение
+        if (CanMoveTo(x, y))
+        {
+            // Обновляем координаты персонажа
+            this.X = x;
+            this.Y = y;
+
+            // Выводим сообщение о перемещении
+            Console.WriteLine($"{this.Name} переместился на позицию ({x}, {y})");
+        }
+        else
+        {
+            // Выводим сообщение о невозможности перемещения
+            Console.WriteLine("Невозможно переместиться на эту позицию!");
+        }
+    }
+
+    // Метод для проверки возможности перемещения
+    private bool CanMoveTo(int x, int y)
+    {
+        // Логика проверки возможности перемещения
+        return true; // Простое значение для примера
+    }
+}
+//Улучшение
+public class Character
+{
+    public void Move(int x, int y)
+    {
+        if (CanMoveTo(x, y))
+        {
+            this.X = x;
+            this.Y = y;
+            Console.WriteLine($"{this.Name} переместился на позицию ({x}, {y})");
+        }
+        else
+        {
+            Console.WriteLine("Невозможно переместиться на эту позицию!");
+        }
+    }
+
+    private bool CanMoveTo(int x, int y)
+    {
+        return true; // Простое значение для примера
+    }
+}
