@@ -17,3 +17,9 @@ player.health = player.maxHealth;
 player.ResetHealth();
 
 
+
+// Исходный код (с комментарием)
+// Применяет эффект "Огненный шар" к объекту
+entity.ApplyEffect(FireballEffect); 
+//Улучшение 
+entity.Ignite();
