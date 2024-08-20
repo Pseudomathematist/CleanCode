@@ -23,3 +23,30 @@ player.ResetHealth();
 entity.ApplyEffect(FireballEffect); 
 //Улучшение 
 entity.Ignite();
+
+
+// Класс для записи данных в текстовый файл
+public class TextFileWriter
+{
+    // Метод для записи данных в файл
+    public void WriteToFile(string filePath, string data)
+    {
+        // Открытие файла для записи
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            // Запись данных в файл
+            writer.Write(data);
+        }
+    }
+}
+//Улучшение
+public class TextFileWriter
+{
+    public void WriteToFile(string filePath, string data)
+    {
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            writer.Write(data);
+        }
+    }
+}
