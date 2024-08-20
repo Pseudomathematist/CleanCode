@@ -1,3 +1,5 @@
+Улучшение по типу 1
+///////////////////
 // Проверяет, находится ли игрок в зоне действия предмета
 if (player.position.x >= item.position.x - item.range && 
     player.position.x <= item.position.x + item.range &&
@@ -159,3 +161,63 @@ public class Character
         return true; // Простое значение для примера
     }
 }
+
+
+
+public class Character
+{
+    // Метод для взаимодействия с предметом
+    public void InteractWithItem(Item item)
+    {
+        // Проверяем, можно ли взаимодействовать с предметом
+        if (item.CanInteract)
+        {
+            // Вызываем метод взаимодействия предмета
+            item.Interact(this);
+
+            // Выводим сообщение о взаимодействии
+            Console.WriteLine($"{this.Name} взаимодействует с {item.Name}!");
+        }
+        else
+        {
+            // Выводим сообщение о невозможности взаимодействия
+            Console.WriteLine("Невозможно взаимодействовать с этим предметом!");
+        }
+    }
+}
+
+public class Item
+{
+    // Метод для взаимодействия с предметом
+    public void Interact(Character character)
+    {
+        // Логика взаимодействия предмета
+        Console.WriteLine("Произошло взаимодействие с предметом!");
+    }
+}
+//Улучшение
+public class Character
+{
+    public void InteractWithItem(Item item)
+    {
+        if (item.CanInteract)
+        {
+            item.Interact(this);
+            Console.WriteLine($"{this.Name} взаимодействует с {item.Name}!");
+        }
+        else
+        {
+            Console.WriteLine("Невозможно взаимодействовать с этим предметом!");
+        }
+    }
+}
+
+public class Item
+{
+    public void Interact(Character character)
+    {
+        Console.WriteLine("Произошло взаимодействие с предметом!");
+    }
+}
+///////////////////
+Улучшения по типу 2
