@@ -169,6 +169,28 @@ if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
 // Останавливает анимацию и переходит к "Idle"
 animator.StopPlayback();
 animator.Play("Idle");
+////////////////////////
+Улучшение кода по типу 6
+////////////////////////
+public bool IsPlayerVisible()
+{
+    // Получает компонент "Camera"
+    Camera mainCamera = Camera.main;
 
+    // Получает позицию игрока
+    Vector3 playerPosition = player.transform.position;
+
+    // Проверяет, находится ли игрок в зоне видимости камеры
+    if (mainCamera.WorldToViewportPoint(playerPosition).z > 0)
+    {
+        // Игрок виден
+        return true;
+    }
+    else
+    {
+        // Игрок не виден
+        return false;
+    } // завершение условия
+} // завершение метода
 
 
