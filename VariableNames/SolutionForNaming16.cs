@@ -36,3 +36,14 @@ if (Input.GetKey(KeyCode.A))
     transform.position += Vector3.left * speed * Time.deltaTime;
 }
 
+// Перемещает персонажа вправо, если нажата клавиша "D"
+if (Input.GetKey(KeyCode.D))
+{
+    transform.position += Vector3.right * speed * Time.deltaTime;
+}
+// Перемещает персонажа влево, если нажата клавиша "A"
+if (Input.GetKey(KeyCode.A))
+{
+    transform.position += Vector3.left * speed * Time.deltaTime;
+}
+
