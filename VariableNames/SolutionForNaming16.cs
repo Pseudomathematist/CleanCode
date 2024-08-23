@@ -23,5 +23,16 @@ Destroy(explosion, 2f);
 GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 Destroy(explosion, 2f);
 ////////////////////////
-Улучшение кода по типу 2
+Улучшение кода по типу 3
+////////////////////////
+// Движение персонажа вправо
+if (Input.GetKey(KeyCode.D))
+{
+    transform.position += Vector3.right * speed * Time.deltaTime;
+}
+// Движение персонажа влево
+if (Input.GetKey(KeyCode.A))
+{
+    transform.position += Vector3.left * speed * Time.deltaTime;
+}
 
