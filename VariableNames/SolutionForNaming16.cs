@@ -14,6 +14,12 @@ if (Physics.CheckSphere(transform.position, 1f))
 }
 
 
+// Создание эффекта взрыва
+GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+// Уничтожение эффекта взрыва
+Destroy(explosion, 2f);
+
 
 ////////////////////////
 Улучшение кода по типу 2
