@@ -55,5 +55,12 @@ if (bird.isGrounded)
     bird.rigidbody.velocity = Vector3.zero;
 }
 
-
-
+// Проверяет, находится ли птица на земле
+if (bird.isGrounded)
+{
+    // Останавливает движение птицы, если она находится на земле
+    bird.rigidbody.velocity = Vector3.zero;
+}
+////////////////////////
+Улучшение кода по типу 4
+////////////////////////
