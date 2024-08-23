@@ -193,4 +193,10 @@ public bool IsPlayerVisible()
     } // завершение условия
 } // завершение метода
 
+public bool IsPlayerVisible()
+{
+    Camera mainCamera = Camera.main;
+    Vector3 playerPosition = player.transform.position;
 
+    return mainCamera.WorldToViewportPoint(playerPosition).z > 0;
+}
