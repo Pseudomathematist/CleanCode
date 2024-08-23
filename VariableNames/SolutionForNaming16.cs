@@ -22,9 +22,6 @@ Destroy(explosion, 2f);
 // Создание эффекта взрыва на текущем положении объекта и уничтожение его через 2 секунды
 GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 Destroy(explosion, 2f);
-
-
-
 ////////////////////////
 Улучшение кода по типу 2
 
