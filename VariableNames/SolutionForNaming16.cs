@@ -96,3 +96,23 @@ newObject.SetActive(true);
 
 
 
+// Создает объект "Player" с физическими свойствами 
+GameObject newObject = new GameObject("Player");
+
+// Добавляет компонент Rigidbody2D к объекту
+Rigidbody2D rb = newObject.AddComponent<Rigidbody2D>();
+
+// Устанавливает начальные параметры для объекта
+rb.gravityScale = 1f;
+rb.velocity = Vector3.zero;
+rb.mass = 1f;
+
+// Позиционирует объект в центре сцены
+newObject.transform.position = Vector3.zero;
+newObject.transform.localScale = Vector3.one;
+
+// Активирует объект, чтобы он стал видимым
+newObject.SetActive(true);
+
+
+
