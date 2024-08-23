@@ -47,3 +47,13 @@ if (Input.GetKey(KeyCode.A))
     transform.position += Vector3.left * speed * Time.deltaTime;
 }
 
+
+// Проверяет, находится ли птица в воздухе
+if (bird.isGrounded)
+{
+    // Останавливает движение птицы
+    bird.rigidbody.velocity = Vector3.zero;
+}
+
+
+
