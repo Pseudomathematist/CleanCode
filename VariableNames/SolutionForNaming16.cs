@@ -116,3 +116,29 @@ newObject.SetActive(true);
 
 
 
+
+
+Animator animator = GetComponent<Animator>();
+animator.Play("Run");
+animator.speed = 1f;
+
+// Устанавливает значение параметра "isRunning" в true
+animator.SetBool("isRunning", true);
+
+// Проверяет, играет ли анимация "Run"
+if (animator.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+{
+    // Выполняет действия, если анимация "Run" играет
+}
+
+// Проверяет, завершена ли анимация "Run"
+if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+{
+    // Выполняет действия, если анимация "Run" завершена
+}
+
+// Останавливает анимацию и переходит к "Idle"
+animator.StopPlayback();
+animator.Play("Idle");
+
+
