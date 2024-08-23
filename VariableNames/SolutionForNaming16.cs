@@ -64,3 +64,35 @@ if (bird.isGrounded)
 ////////////////////////
 Улучшение кода по типу 4
 ////////////////////////
+// Создает новый объект типа "GameObject"
+GameObject newObject = new GameObject();
+
+// Устанавливает имя объекта на "Player"
+newObject.name = "Player";
+
+// Добавляет компонент "Rigidbody2D" к объекту
+newObject.AddComponent<Rigidbody2D>();
+
+// Устанавливает позицию объекта
+newObject.transform.position = Vector3.zero;
+
+// Устанавливает размер объекта
+newObject.transform.localScale = Vector3.one;
+
+// Доступ к компоненту "Rigidbody2D"
+Rigidbody2D rb = newObject.GetComponent<Rigidbody2D>();
+
+// Устанавливает гравитацию для объекта
+rb.gravityScale = 1f;
+
+// Устанавливает начальную скорость объекта
+rb.velocity = Vector3.zero;
+
+// Устанавливает массу объекта
+rb.mass = 1f;
+
+// Запускает объект
+newObject.SetActive(true);
+
+
+
